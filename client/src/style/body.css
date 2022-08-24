@@ -1,0 +1,212 @@
+/* layout page */
+.gradient-color {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 200px;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo img {
+    padding-right: 10px;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+.big-text{
+    
+    width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.card-header {
+    background-color: rgb(5, 5, 63);
+
+}
+
+.card-header h2 {
+    margin: 0px;
+    padding: 15px 0;
+    text-align: center;
+    color: snow;
+}
+
+.card-img {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-body {
+    background-color: rgb(188, 223, 220);
+}
+
+.card-body p {
+    font-size: 16px;
+    text-transform: capitalize;
+    
+}
+.card-p{
+    width: 90%;
+    margin: auto;
+   
+}
+
+/* module css */
+
+.module_container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popUp {
+    width: 400px;
+    height: 400px;
+    background-color: snow;
+    z-index: 1100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fa-circle-xmark {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: rgb(5, 5, 63);
+    cursor: pointer;
+}
+
+
+/* login page */
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login_form .inputs{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.login_form .inputs:focus{
+    outline: none;
+}
+.inputs_but{
+    background-color: rgb(5, 5, 63);
+    color: white;
+    
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    text-decoration: none
+}
+.inputs_but-nobackg{
+    background-color: transparent !important;
+    border: 1px solid rgb(5, 5, 63);
+    color: black;
+    
+}
+.inputs_but_looding{
+    background-color: rgb(78, 78, 104);
+    color: white;
+    padding: 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none
+}
+.error-text{
+    color: red;
+}
+
+.marg{
+    margin-top: 20px;
+}
+
+/* DashBoard page */
+
+.info-con{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.info-con a{
+    text-decoration: none;
+    padding: 10px;
+    
+}

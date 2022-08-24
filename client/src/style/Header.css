@@ -1,0 +1,29 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(77, 240, 226);
+}
+
+.header-container{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.link-without-backg{
+    text-decoration: none;
+    padding-left: 10px;
+    color: royalblue;
+    font-size: 20px;
+}
