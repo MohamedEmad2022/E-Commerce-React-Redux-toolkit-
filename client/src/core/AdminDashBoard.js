@@ -26,7 +26,7 @@ useEffect(()=>{
             <div className="info-con">
                 <h2>Admin links</h2>
                 <Link to="/adminDashBoard/createCategory">Create Category</Link>
-                <Link to="./Admin/createProduct">Create Product</Link>
+                <Link to="/adminDashBoard/AddProduct">Create Product</Link>
                 <Link to="./Admin/viewOrder">View Order</Link>
                 <Link to="./Admin/manageProduct">Manage Product</Link>
             </div>

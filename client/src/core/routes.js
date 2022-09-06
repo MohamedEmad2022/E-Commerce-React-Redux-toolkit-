@@ -16,7 +16,7 @@ const PagesRoutes = () => {
     const AdminDashBoard = lazy(() => import("./AdminDashBoard"))
     const CreateCategory = lazy(() => import("../adminDashBoard/createCategory"))
     const Cart = lazy(() => import("./cart"))
-
+    const CreateProduct = lazy(() => import("../adminDashBoard/AddProduct"))
     return (
         <BrowserRouter>
             <Suspense fallback={<div>Loading...</div>}>
@@ -29,6 +29,7 @@ const PagesRoutes = () => {
                     <Route path="/adminDashBoard" element={<AdminPrivate />} >
                         <Route path="/adminDashBoard" element={<AdminDashBoard />}/>
                         <Route path="/adminDashBoard/createCategory" element={<CreateCategory />}/>
+                        <Route path="/adminDashBoard/AddProduct" element={<CreateProduct />}/>
                     </Route>
                     <Route path="/cart" element={<Cart />} />
                 </Routes>

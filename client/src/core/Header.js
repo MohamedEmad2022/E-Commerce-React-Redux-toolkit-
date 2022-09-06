@@ -30,7 +30,11 @@ const Header = () => {
         dispatch(showModal("SignUp"));
 
     }
+    const logOut = ()=>{
 
+        dispatch(SignOutAcion())
+        window.location.reload()
+    }
     
 
     return (
@@ -45,7 +49,7 @@ const Header = () => {
 
                         {isAuthentication() ?
                             <>
-                                <input className="inputs_but" type="button" value="Log Out" onClick={() => dispatch(SignOutAcion())} />
+                                <input className="inputs_but" type="button" value="Log Out" onClick={logOut} />
                                 <Link to={user.role === 1 ? "/adminDashBoard" : "/userDashBoard"} className="inputs_but">DashBoard</Link>
                             </>
 

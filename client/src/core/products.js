@@ -25,7 +25,7 @@ const ProductsList = () => {
     return (
         <>
             
-            <div className="container">
+            <div className="container-1">
             <div className="big-text"><h2>Best Syllar</h2></div>
                 {(!isLodding) ? productsBySyle.map((item) => {
                     return (
@@ -38,7 +38,7 @@ const ProductsList = () => {
 
             </div>
             
-            <div className="container">
+            <div className="container-1">
             <div className="big-text"><h2>Latest Arrival</h2></div>
                 {(!isLodding) ? productsByArrival.map((item) => {
                     return (
